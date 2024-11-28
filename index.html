@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>TO-DO-LIST PAPER</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li>TO-DO-LIST <p>&copy; Livhuwani</p></li>
+            <li>Eat <span class="time">20:00</span></li>
+            <li>Sleep <span class="time">21:00</span></li>
+            <li>Wake Up<span class="time">00:00</span></li>
+            <li>Code <span class="time">01:00</span></li>
+            <li><button class="btn-add">Add Activity</button></li>
+        </ul>
+        
+        <main class="modal-container">
+            <section class="modal">
+                <article class="modal-header">
+                    <p>ADD ACTIVITY</p>
+                    <article class="close-modal"><span>&times;</span></article>
+                </article>
+                <article class="modal-body">
+                    <input type="text" class="activity-name" placeholder="Activity Name" />
+                    <input type="time" class="activity-time" />
+                    <button class="btn-save">SAVE</button>
+                    <p id="error">Please fill in all the fields.</p>
+                </article>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

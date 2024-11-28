@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    font: 1em 'Arial';
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+*:focus {
+    outline: none;
+}
+body {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background: #DDD;
+}
+ul {
+    position: relative;
+    width: 250px;
+    padding: 0; margin: 0 auto;
+    list-style-type: none;
+    border: 1px solid #888;
+    color: #444;
+    background: #FFF;
+    box-shadow: 2px 2px 1px #AAA;
+    display: block;
+}
+ul li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid Steelblue;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+ul li:hover {
+    background: #EEE;
+}
+ul li:nth-child(1) {
+    border-bottom: 2px solid Indianred;
+    text-align: center;
+}
+ul li:nth-child(1) p {
+    position: absolute;
+    top: 2px; right: 3px;
+    font-size: 0.5em;
+    color: Steelblue;
+}
+ul li:last-child {
+    border: 0;
+    padding: 5px;
+}
+.btn-add, .btn-save{
+    position: relative;
+    width: 100%;
+    left: 0; right: 0;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background: Mediumseagreen;
+    display: block;
+    cursor: pointer;
+    transition: 150ms linear;
+}
+.btn-add:hover, .btn-save:hover{
+    background: Seagreen;
+}
+.modal-container {
+    position: fixed;
+    height: 100%; width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+    position: relative;
+    width: 250px;
+    background: #DDD;
+    -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
+            transform: scale(0);
+    transition: 100ms linear;
+}
+.modal-header {
+    position: relative;
+    height: 2em; width: 100%;
+    top: 0;
+    padding: 10px;
+    color: #555;
+    border-bottom: 1px solid #CCC;
+    background: transparent;
+    box-sizing: border-box;
+}
+.modal-header p {
+    font: 700 0.8em 'Arial';
+    text-align: center;
+    
+}
+.close-modal {
+    position: absolute;
+    height: 30px; width: 30px;
+    top: -15px; right: -15px;
+    border-radius: 50%;
+    background: Indianred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.close-modal span {
+    position: relative;
+    font-size: 1.5em;
+    color: #DDD;
+}
+.modal-body {
+    position: relative;
+    padding: 10px;
+}
+.activity-name, .activity-time {
+    height: 35px; width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+    font: 0.7em 'Arial';
+    color: #555;
+    box-sizing: border-box;
+}
+.activity-time {
+    background: #FFF;
+}
+.time {
+    position: absolute;
+    bottom: 2px; right: 3px;
+    font: 700 0.5em 'Arial';
+    color: #888;
+}
+.btn-save {
+    width: 100%;
+    margin: 5px auto;
+}
+#error {
+    color: Firebrick;
+    font-size: 0.7em;
+    opacity: 0;
+    transition: 100ms linear;
+}
